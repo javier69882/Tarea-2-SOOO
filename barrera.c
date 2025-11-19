@@ -10,8 +10,7 @@ int barrera_init(barrera_t *b, int N){
     b->N=N;
     b->count=0;
     b->etapa=0;
-    b->etapa=0;
-
+    
     int err;
 
     err=pthread_mutex_init(&b->mutex, NULL);
@@ -21,6 +20,7 @@ int barrera_init(barrera_t *b, int N){
     err=pthread_cond_init(&b->cond, NULL);
     if(err!=0){
         pthread_mutex_destroy(&b->mutex);
+        return err;
     }
     return 0;
 }

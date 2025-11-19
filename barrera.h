@@ -1,5 +1,5 @@
 
-ifndef BARRERA_H
+#ifndef BARRERA_H
 #define BARRERA_H
 #include <pthread.h>
 

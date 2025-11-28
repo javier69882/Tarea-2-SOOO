@@ -168,7 +168,7 @@ int main(int argc, char *argv[]) {
     printf("\nTotales:\n");
     printf("  Referencias: %llu\n",
            (unsigned long long)total_referencias);
-    printf("  Fallos de página: %llu\n",
+    printf("  Fallos de pagina: %llu\n",
            (unsigned long long)fallos_pagina);
     printf("  Tasa de fallos : %.6f\n", tasa);
 
